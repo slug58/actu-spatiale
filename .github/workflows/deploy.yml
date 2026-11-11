@@ -23,6 +23,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          # Toujours partir du dernier état de la branche (et pas du commit d'origine
+          # en cas de « Re-run »), pour inclure les commits de données du robot.
+          ref: ${{ github.ref_name }}
 
       - uses: dtolnay/rust-toolchain@b725eda525362e7cf34af9a7243cac1e3f01a7ec # branche stable
         with:
@@ -39,6 +43,8 @@ jobs:
 
       - name: Commit des données si elles ont changé
         if: github.event_name != 'pull_request'
+        # Un échec de commit ne doit jamais empêcher la publication du site.
+        continue-on-error: true
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -47,7 +53,9 @@ jobs:
             echo "Aucun changement de données."
           else
             git commit -m "data: mise à jour automatique"
-            git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+            # En cas de conflit sur les JSON, on garde les données qu'on vient de récupérer
+            # (avec un rebase, « theirs » désigne notre commit rejoué).
+            git pull --rebase -X theirs origin "${GITHUB_REF_NAME}"
             git push origin "HEAD:${GITHUB_REF_NAME}"
           fi
 

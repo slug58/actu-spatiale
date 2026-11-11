@@ -1,0 +1,13 @@
+---
+import Base from '../layouts/Base.astro';
+import { url } from '../lib/util';
+---
+
+<Base title="Page introuvable">
+  <section class="notfound">
+    <p class="mono big">T+404</p>
+    <h1>Perte de signal</h1>
+    <p class="lead">Cette page s'est désintégrée à la rentrée atmosphérique. Rapid unscheduled disassembly.</p>
+    <a class="btn" href={url()}>Retour à la base</a>
+  </section>
+</Base>

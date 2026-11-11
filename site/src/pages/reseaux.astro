@@ -1,0 +1,57 @@
+---
+import Base from '../layouts/Base.astro';
+import SocialPost from '../components/SocialPost.astro';
+import { social } from '../lib/util';
+
+const starshipCount = social.filter((p) => p.starship).length;
+---
+
+<Base title="Réseaux" description="Fil des posts de comptes spatiaux sur les réseaux sociaux ouverts (Bluesky, Reddit).">
+  <h1 class="page-title">Sur les réseaux</h1>
+  <p class="lead">Les posts de journalistes et passionnés du spatial sur les réseaux ouverts (Bluesky, Reddit), récupérés automatiquement.</p>
+
+  {
+    social.length === 0 ? (
+      <p class="empty">
+        🛰️ Silence radio pour l'instant : le robot n'a encore capté aucun post. Le fil se remplira tout seul à la prochaine mise à jour.
+      </p>
+    ) : (
+      <>
+        <div class="filters" role="group" aria-label="Filtrer les posts">
+          <button type="button" data-social-filter="all" aria-pressed="true">
+            Tous ({social.length})
+          </button>
+          <button type="button" data-social-filter="starship" aria-pressed="false">
+            Starship uniquement ({starshipCount})
+          </button>
+        </div>
+        <div class="feed">
+          {social.map((p) => (
+            <SocialPost post={p} />
+          ))}
+        </div>
+        <p class="empty" hidden data-social-empty>
+          Aucun post Starship dans le fil actuel.
+        </p>
+      </>
+    )
+  }
+</Base>
+
+<script>
+  const buttons = document.querySelectorAll<HTMLButtonElement>('[data-social-filter]');
+  const posts = document.querySelectorAll<HTMLElement>('.post');
+  const empty = document.querySelector<HTMLElement>('[data-social-empty]');
+  buttons.forEach((b) =>
+    b.addEventListener('click', () => {
+      const onlyStarship = b.dataset.socialFilter === 'starship';
+      let shown = 0;
+      posts.forEach((p) => {
+        p.hidden = onlyStarship && p.dataset.starship !== '1';
+        if (!p.hidden) shown++;
+      });
+      if (empty) empty.hidden = shown > 0;
+      buttons.forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    }),
+  );
+</script>

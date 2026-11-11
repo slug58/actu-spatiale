@@ -1,0 +1,37 @@
+---
+import { type SocialPost, formatDate, truncate } from '../lib/util';
+
+interface Props {
+  post: SocialPost;
+  short?: boolean;
+}
+const { post: p, short = false } = Astro.props;
+const icon = p.platform === 'bluesky' ? '🦋' : p.platform === 'reddit' ? '👽' : '💬';
+// Contenu tiers : rendu uniquement en texte (Astro échappe {p.text}), jamais en HTML brut.
+const text = short ? truncate(p.text, 220) : p.text;
+const safeHttp = (u: string | null) => (u && /^https:\/\//.test(u) ? u : null);
+const link = safeHttp(p.url);
+const avatar = safeHttp(p.avatar);
+const image = safeHttp(p.image);
+---
+
+<article class="card post" data-starship={p.starship ? '1' : '0'}>
+  <div class="card-body">
+    <header class="post-head">
+      {avatar ? <img class="avatar" src={avatar} alt="" width="40" height="40" loading="lazy" /> : <span class="avatar placeholder">{icon}</span>}
+      <div>
+        <strong>{p.author}</strong>
+        <span class="handle">{icon} {p.handle}</span>
+      </div>
+      {p.starship && <span class="badge go">Starship</span>}
+    </header>
+    <p class="post-text">{text}</p>
+    {image && !short && <img class="post-img" src={image} alt="" loading="lazy" decoding="async" />}
+    <footer class="meta">
+      <span>{formatDate(p.publishedAt)}</span>
+      {p.likes != null && <span>♥ {p.likes}</span>}
+      {p.reposts != null && <span>⟳ {p.reposts}</span>}
+      {link && <a class="more" href={link} target="_blank" rel="noopener noreferrer">Voir ↗</a>}
+    </footer>
+  </div>
+</article>

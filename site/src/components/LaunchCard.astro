@@ -1,0 +1,26 @@
+---
+import { type Launch, status, formatNet, truncate, url } from '../lib/util';
+
+interface Props {
+  launch: Launch;
+  postIds?: Set<string>;
+}
+const { launch: l, postIds } = Astro.props;
+const st = status(l.status);
+const hasPost = postIds?.has(l.slug);
+---
+
+<article class="card launch">
+  {l.thumbnail && <img class="thumb" src={l.thumbnail} alt="" loading="lazy" decoding="async" />}
+  <div class="card-body">
+    <div class="meta">
+      <span class={`badge ${st.tone}`}>{st.label}</span>
+      {l.flightNumber && <span class="mono">VOL #{l.flightNumber}</span>}
+      <span>{l.vehicle}</span>
+    </div>
+    <h3>{l.mission}</h3>
+    <p class="when">{formatNet(l.net, l.netPrecision)} · {l.pad}</p>
+    {l.description && <p class="desc">{truncate(l.description)}</p>}
+    {hasPost && <a class="more" href={url(`blog/${l.slug}`)}>Lire le récap →</a>}
+  </div>
+</article>

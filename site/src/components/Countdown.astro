@@ -1,0 +1,33 @@
+---
+interface Props {
+  net: string;
+}
+const { net } = Astro.props;
+---
+
+<div class="countdown" data-countdown={net}>
+  <span class="cd-sign mono">T−</span>
+  <div><span class="cd-num" data-u="d">--</span><small>jours</small></div>
+  <div><span class="cd-num" data-u="h">--</span><small>heures</small></div>
+  <div><span class="cd-num" data-u="m">--</span><small>min</small></div>
+  <div><span class="cd-num" data-u="s">--</span><small>sec</small></div>
+</div>
+
+<script>
+  const pad = (n: number) => String(n).padStart(2, '0');
+  function tick() {
+    document.querySelectorAll<HTMLElement>('[data-countdown]').forEach((el) => {
+      let diff = new Date(el.dataset.countdown!).getTime() - Date.now();
+      el.querySelector('.cd-sign')!.textContent = diff >= 0 ? 'T−' : 'T+';
+      el.classList.toggle('past', diff < 0);
+      diff = Math.abs(diff) / 1000;
+      const parts: Record<string, number> = { d: diff / 86400, h: (diff % 86400) / 3600, m: (diff % 3600) / 60, s: diff % 60 };
+      for (const [u, v] of Object.entries(parts)) {
+        const n = el.querySelector(`[data-u="${u}"]`);
+        if (n) n.textContent = pad(Math.floor(v));
+      }
+    });
+  }
+  tick();
+  setInterval(tick, 1000);
+</script>

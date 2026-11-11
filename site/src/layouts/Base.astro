@@ -1,0 +1,75 @@
+---
+import '../styles/global.css';
+import { url } from '../lib/util';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string | null;
+}
+const {
+  title,
+  description = 'Actualité des lancements spatiaux et suivi du Starship de SpaceX, mis à jour automatiquement.',
+  image,
+} = Astro.props;
+const fullTitle = title ? `${title} · ActuSpatiale` : 'ActuSpatiale — actualité spatiale & Starship';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const path = Astro.url.pathname.slice(base.length).replace(/\/$/, '') || '/';
+const nav = [
+  { href: '', label: 'Accueil' },
+  { href: 'vols', label: 'Vols' },
+  { href: 'actu', label: 'Actu' },
+  { href: 'reseaux', label: 'Réseaux' },
+  { href: 'blog', label: 'Blog' },
+];
+const active = (h: string) => (h === '' ? path === '/' : path === '/' + h || path.startsWith('/' + h + '/'));
+const built = new Intl.DateTimeFormat('fr-FR', { dateStyle: 'long', timeStyle: 'short', timeZone: 'Europe/Paris' }).format(new Date());
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    {image && <meta property="og:image" content={image} />}
+    <meta name="theme-color" content="#070a12" />
+    <link rel="icon" type="image/svg+xml" href={url('favicon.svg')} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="stars" aria-hidden="true"></div>
+    <header class="top">
+      <div class="wrap top-inner">
+        <a class="logo" href={url()}>
+          <img src={url('favicon.svg')} alt="" width="28" height="28" />
+          <span>Actu<span class="accent">Spatiale</span></span>
+        </a>
+        <nav aria-label="Navigation principale">
+          {nav.map((n) => <a href={url(n.href)} aria-current={active(n.href) ? 'page' : undefined}>{n.label}</a>)}
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <slot />
+    </main>
+
+    <footer class="wrap foot">
+      <p>
+        Données : <a href="https://thespacedevs.com/llapi">Launch Library 2</a> &amp;
+        <a href="https://www.spaceflightnewsapi.net/">Spaceflight News API</a> (The Space Devs), réseaux sociaux ouverts.
+        Images : crédits indiqués par les sources.
+      </p>
+      <p>Site reconstruit automatiquement le {built} · robot en Rust 🦀 · site en Astro 🚀</p>
+    </footer>
+  </body>
+</html>

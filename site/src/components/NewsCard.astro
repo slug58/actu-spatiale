@@ -1,0 +1,20 @@
+---
+import { type Article, formatDate } from '../lib/util';
+
+interface Props {
+  article: Article;
+}
+const { article: a } = Astro.props;
+---
+
+<article class="card news">
+  <a href={a.url} target="_blank" rel="noopener noreferrer" class="news-link">
+    {a.image && <img class="cover" src={a.image} alt="" loading="lazy" decoding="async" />}
+    <div class="card-body">
+      <div class="meta"><span class="source">{a.source}</span><span>{formatDate(a.publishedAt)}</span></div>
+      <h3>{a.title}</h3>
+      {a.summary && <p class="desc">{a.summary}</p>}
+      <span class="more">Lire sur {a.source} ↗</span>
+    </div>
+  </a>
+</article>

@@ -1,0 +1,21 @@
+---
+import Base from '../layouts/Base.astro';
+import NewsCard from '../components/NewsCard.astro';
+import { news } from '../lib/util';
+---
+
+<Base title="Actu" description="Les derniers articles de presse spécialisée sur Starship et SpaceX.">
+  <h1 class="page-title">Actualités</h1>
+  <p class="lead">Les derniers articles de la presse spatiale qui parlent de Starship, agrégés par Spaceflight News API.</p>
+  {
+    news.length > 0 ? (
+      <div class="grid">
+        {news.map((a) => (
+          <NewsCard article={a} />
+        ))}
+      </div>
+    ) : (
+      <p class="empty">📡 Aucune actu pour le moment, le robot repasse bientôt.</p>
+    )
+  }
+</Base>

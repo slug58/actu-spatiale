@@ -1,0 +1,86 @@
+name: Mise à jour & déploiement
+
+# Un seul workflow : un push fait avec GITHUB_TOKEN ne déclenche PAS d'autre
+# workflow, donc collecte des données + build + déploiement sont enchaînés ici.
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 */3 * * *" # toutes les 3 h, à la minute 17 (évite le pic de :00)
+  workflow_dispatch:
+
+permissions:
+  contents: write # commit des données récupérées
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - uses: dtolnay/rust-toolchain@b725eda525362e7cf34af9a7243cac1e3f01a7ec # branche stable
+        with:
+          toolchain: stable
+
+      - uses: Swatinem/rust-cache@d1527c8f67ef9af357290475d4af4b0fab8f12e0 # v2.9.3
+        with:
+          workspaces: fetcher
+
+      - name: Récupérer les données (robot Rust)
+        # Si une API tombe, on publie quand même avec les anciennes données.
+        continue-on-error: true
+        run: cargo run --release --manifest-path fetcher/Cargo.toml -- --out site/src
+
+      - name: Commit des données si elles ont changé
+        if: github.event_name != 'pull_request'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/src/data site/src/content/blog
+          if git diff --cached --quiet; then
+            echo "Aucun changement de données."
+          else
+            git commit -m "data: mise à jour automatique"
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - id: pages
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+
+      - name: Installer les dépendances
+        working-directory: site
+        run: npm ci
+
+      - name: Build Astro
+        working-directory: site
+        env:
+          SITE_URL: ${{ steps.pages.outputs.origin }}
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}
+        run: npm run build
+
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: site/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1

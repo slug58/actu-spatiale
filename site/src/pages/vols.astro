@@ -1,0 +1,74 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import LaunchCard from '../components/LaunchCard.astro';
+import { launches, isUpcoming } from '../lib/util';
+
+const postIds = new Set((await getCollection('blog')).map((p) => p.id));
+
+// Plus récent en haut, regroupé par année.
+const byYear = new Map<string, typeof launches>();
+for (const l of [...launches].reverse()) {
+  const y = l.net.slice(0, 4);
+  if (!byYear.has(y)) byYear.set(y, []);
+  byYear.get(y)!.push(l);
+}
+
+const filters = [
+  { id: 'all', label: 'Tous' },
+  { id: 'integrated', label: 'Vols intégrés' },
+  { id: 'prototype', label: 'Prototypes' },
+  { id: 'upcoming', label: 'À venir' },
+];
+---
+
+<Base title="Vols" description="Frise chronologique de tous les vols Starship, des sauts du Starhopper aux vols orbitaux.">
+  <h1 class="page-title">Frise des vols</h1>
+  <p class="lead">Des premiers sauts du Starhopper en 2019 aux vols orbitaux de Starship V3.</p>
+
+  <div class="filters" role="group" aria-label="Filtrer les vols">
+    {filters.map((f, i) => <button type="button" data-filter={f.id} aria-pressed={i === 0 ? 'true' : 'false'}>{f.label}</button>)}
+  </div>
+
+  <div class="timeline">
+    {
+      [...byYear].map(([year, items]) => (
+        <section class="tl-year" data-year={year}>
+          <h2 class="tl-year-title mono">{year}</h2>
+          <ol class="tl-items">
+            {items.map((l) => (
+              <li class="tl-item" data-kind={l.prototype ? 'prototype' : 'integrated'} data-upcoming={isUpcoming(l) ? '1' : '0'}>
+                <LaunchCard launch={l} postIds={postIds} />
+              </li>
+            ))}
+          </ol>
+        </section>
+      ))
+    }
+  </div>
+  <p class="empty" hidden data-empty>Aucun vol pour ce filtre.</p>
+</Base>
+
+<script>
+  const buttons = document.querySelectorAll<HTMLButtonElement>('[data-filter]');
+  const items = document.querySelectorAll<HTMLElement>('.tl-item');
+  const years = document.querySelectorAll<HTMLElement>('.tl-year');
+  const empty = document.querySelector<HTMLElement>('[data-empty]');
+
+  function apply(filter: string) {
+    let shown = 0;
+    items.forEach((it) => {
+      const ok =
+        filter === 'all' ||
+        (filter === 'upcoming' && it.dataset.upcoming === '1') ||
+        (filter !== 'upcoming' && it.dataset.kind === filter);
+      it.hidden = !ok;
+      if (ok) shown++;
+    });
+    years.forEach((y) => (y.hidden = !y.querySelector('.tl-item:not([hidden])')));
+    if (empty) empty.hidden = shown > 0;
+    buttons.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.filter === filter)));
+  }
+
+  buttons.forEach((b) => b.addEventListener('click', () => apply(b.dataset.filter!)));
+</script>

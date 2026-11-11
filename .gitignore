@@ -1,0 +1,17 @@
+# Rust
+fetcher/target/
+
+# Astro / Node
+site/node_modules/
+site/dist/
+site/.astro/
+npm-debug.log*
+
+# Divers
+.DS_Store
+Thumbs.db
+.env
+.env.*
+*.swp
+.idea/
+.vscode/

@@ -1,0 +1,31 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { formatDate, url } from '../../lib/util';
+
+const posts = (await getCollection('blog')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+
+<Base title="Blog" description="Analyses, récaps de vols et notes sur le spatial.">
+  <h1 class="page-title">Blog</h1>
+  <p class="lead">Articles écrits à la main et récaps de vols générés par le robot (marqués 🤖).</p>
+  <div class="grid">
+    {
+      posts.map((p) => (
+        <article class="card">
+          <a href={url(`blog/${p.id}`)} class="news-link">
+            {p.data.image && <img class="cover" src={p.data.image} alt="" loading="lazy" decoding="async" />}
+            <div class="card-body">
+              <div class="meta">
+                <span>{formatDate(p.data.date)}</span>
+                {p.data.auto && <span class="badge tbd">🤖 auto</span>}
+              </div>
+              <h3>{p.data.title}</h3>
+              {p.data.description && <p class="desc">{p.data.description}</p>}
+            </div>
+          </a>
+        </article>
+      ))
+    }
+  </div>
+</Base>

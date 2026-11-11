@@ -1,0 +1,122 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import Countdown from '../components/Countdown.astro';
+import LaunchCard from '../components/LaunchCard.astro';
+import NewsCard from '../components/NewsCard.astro';
+import SocialPost from '../components/SocialPost.astro';
+import stats from '../data/stats.json';
+import { launches, news, social, isDone, status, formatNet, formatDate, hasPreciseTime, truncate, url } from '../lib/util';
+
+const next = launches.find((l) => l.id === stats.nextLaunchId);
+const recent = launches.filter(isDone).reverse().slice(0, 4);
+const posts = (await getCollection('blog')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const postIds = new Set(posts.map((p) => p.id));
+const latestPosts = posts.slice(0, 3);
+const nextSt = next ? status(next.status) : null;
+
+const tiles = [
+  { value: stats.integratedFlights, label: 'vols intégrés' },
+  { value: `${stats.integratedSuccessRate.toLocaleString('fr-FR')} %`, label: 'de succès (vols intégrés)' },
+  { value: stats.success, label: 'succès', tone: 'ok' },
+  { value: stats.partial, label: 'échecs partiels', tone: 'warn' },
+  { value: stats.failure, label: 'échecs', tone: 'ko' },
+  { value: stats.upcoming, label: 'vols programmés', tone: 'go' },
+];
+---
+
+<Base image={next?.image}>
+  {
+    next && nextSt && (
+      <section class="hero" style={next.image ? `--hero-img: url("${next.image}")` : undefined}>
+        <div class="hero-inner">
+          <p class="eyebrow">Prochain lancement</p>
+          <h1>{next.mission}</h1>
+          <div class="meta">
+            <span class={`badge ${nextSt.tone}`}>{nextSt.label}</span>
+            {next.flightNumber && <span class="mono">VOL #{next.flightNumber}</span>}
+            <span>{next.vehicle}</span>
+          </div>
+          <p class="when">
+            {formatNet(next.net, next.netPrecision)} · {next.pad}, {next.location}
+          </p>
+          {hasPreciseTime(next.netPrecision) ? <Countdown net={next.net} /> : <p class="muted">Date encore trop floue pour un compte à rebours.</p>}
+          {next.description && <p class="hero-desc">{truncate(next.description, 260)}</p>}
+          {next.imageCredit && <p class="credit">Image : {next.imageCredit}</p>}
+        </div>
+      </section>
+    )
+  }
+
+  <section aria-labelledby="stats-title">
+    <h2 id="stats-title" class="section-title">Starship en chiffres</h2>
+    <div class="tiles">
+      {
+        tiles.map((t) => (
+          <div class={`tile ${t.tone ?? ''}`}>
+            <span class="tile-value mono">{t.value}</span>
+            <span class="tile-label">{t.label}</span>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2 class="section-title">Derniers vols</h2>
+      <a href={url('vols')} class="more">Toute la frise →</a>
+    </div>
+    <div class="grid">
+      {recent.map((l) => <LaunchCard launch={l} postIds={postIds} />)}
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2 class="section-title">Dernières actus</h2>
+      <a href={url('actu')} class="more">Toutes les actus →</a>
+    </div>
+    <div class="grid">
+      {news.slice(0, 6).map((a) => <NewsCard article={a} />)}
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2 class="section-title">Sur les réseaux</h2>
+      <a href={url('reseaux')} class="more">Tout le fil →</a>
+    </div>
+    {
+      social.length > 0 ? (
+        <div class="grid">
+          {social.slice(0, 3).map((p) => (
+            <SocialPost post={p} short />
+          ))}
+        </div>
+      ) : (
+        <p class="empty">🛰️ Le robot n'a pas encore capté de posts. Revenez après la prochaine mise à jour !</p>
+      )
+    }
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2 class="section-title">Blog</h2>
+      <a href={url('blog')} class="more">Tous les articles →</a>
+    </div>
+    <ul class="post-list">
+      {
+        latestPosts.map((p) => (
+          <li>
+            <a href={url(`blog/${p.id}`)}>
+              <span class="mono muted">{formatDate(p.data.date)}</span>
+              <span class="post-title">{p.data.title}</span>
+              {p.data.auto && <span class="badge tbd">🤖 auto</span>}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</Base>

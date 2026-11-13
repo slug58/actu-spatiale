@@ -1,5 +1,23 @@
 [
   {
+    "id": 40843,
+    "title": "Live Coverage: Starship Flight 15 attempts to recover full vehicle in double launch pad catch",
+    "url": "https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/",
+    "image": "https://spaceflightnow.com/wp-content/uploads/2026/11/20261113-Starship-wide.jpg",
+    "source": "Spaceflight Now",
+    "summary": "Liftoff of the integrated Starship vehicle from Starbase in Texas is scheduled during a 75-minute launch window that opens at 4:45 p.m. CST (5:45 p.m. EST / 2245 UTC) on Friday, Nov. 13.",
+    "publishedAt": "2026-11-13T19:15:11Z"
+  },
+  {
+    "id": 40838,
+    "title": "Rocket Report: Starship set for historic test flight; a century of Electron",
+    "url": "https://arstechnica.com/space/2026/11/rocket-report-starship-set-for-historic-test-flight-a-century-of-electron/",
+    "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/electron-livery.jpeg",
+    "source": "Arstechnica",
+    "summary": "\"You can simplify it as a big tank feeding engines.\"",
+    "publishedAt": "2026-11-13T12:00:40Z"
+  },
+  {
     "id": 40833,
     "title": "Starship Flight 15 to attempt first catch of both stages",
     "url": "https://www.nasaspaceflight.com/2026/11/starship-flight-15-spacex-history/",
@@ -250,23 +268,5 @@
     "source": "SpacePolicyOnline.com",
     "summary": "SpaceX announced plans today to build a second Starbase, this one on the coast of Louisiana. All Starship launches to date have been from Starbase, TX. They will soon begin […]",
     "publishedAt": "2026-08-25T22:22:00Z"
-  },
-  {
-    "id": 39590,
-    "title": "Stoke Space conducts second stage fit checks, completes first stage engines ahead of Nova debut",
-    "url": "https://www.nasaspaceflight.com/2026/08/stoke-update-081926/",
-    "image": "https://www.nasaspaceflight.com/wp-content/uploads/2026/08/AE14D6E5-F897-4488-A5CC-150A3985FC1C.jpeg",
-    "source": "NASASpaceflight",
-    "summary": "While Starship is grabbing headlines, another fully reusable vehicle is advancing towards a potential 2026…",
-    "publishedAt": "2026-08-19T20:52:07Z"
-  },
-  {
-    "id": 39556,
-    "title": "Ship 40 arrives at Christmas Island, Plans Return to Starbase",
-    "url": "https://www.nasaspaceflight.com/2026/08/ship-40-christmas-island-plans-return-starbase/",
-    "image": "https://www.nasaspaceflight.com/wp-content/uploads/2026/08/NSF-2026-08-18-13-53-12-564.jpg",
-    "source": "NASASpaceflight",
-    "summary": "SpaceX has successfully guided Starship Ship 40 to a location just off the coast of…",
-    "publishedAt": "2026-08-18T12:59:38Z"
   }
 ]

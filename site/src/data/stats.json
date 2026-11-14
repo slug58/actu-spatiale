@@ -1,12 +1,12 @@
 {
   "total": 27,
-  "completed": 23,
-  "success": 15,
+  "completed": 24,
+  "success": 16,
   "partial": 3,
   "failure": 5,
   "upcoming": 3,
-  "integratedSuccessRate": 64.3,
-  "integratedFlights": 14,
+  "integratedSuccessRate": 66.7,
+  "integratedFlights": 15,
   "byVehicle": [
     {
       "vehicle": "Starship Prototype",
@@ -15,10 +15,10 @@
     },
     {
       "vehicle": "Starship",
-      "flights": 14,
-      "success": 9
+      "flights": 15,
+      "success": 10
     }
   ],
   "nextLaunchId": "b97ec300-56b8-49b1-9a17-43b06bcae6f1",
-  "lastLaunchId": "7d1afb26-6f9c-429b-9ccf-29012fd1e519"
+  "lastLaunchId": "0f867f0c-5422-4d44-93b8-d7faaae7019b"
 }

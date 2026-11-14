@@ -557,11 +557,11 @@
     "name": "Starship | Starlink Group 31-2 (Starship Flight 15)",
     "mission": "Starlink Group 31-2 (Starship Flight 15)",
     "flightNumber": 15,
-    "net": "2026-11-13T22:45:00Z",
-    "netPrecision": "MIN",
-    "status": "Go",
-    "statusName": "Go for Launch",
-    "statusDescription": "Current T-0 confirmed by official or reliable sources.",
+    "net": "2026-11-13T22:47:36Z",
+    "netPrecision": "SEC",
+    "status": "Deployed",
+    "statusName": "Payload Deployed",
+    "statusDescription": "Deployment of the payload(s) has been confirmed.",
     "vehicle": "Starship",
     "prototype": false,
     "pad": "Orbital Launch Pad 2",
@@ -573,7 +573,7 @@
     "missionType": "Communications",
     "orbit": "Low Earth Orbit",
     "failReason": null,
-    "webcastLive": false
+    "webcastLive": true
   },
   {
     "id": "b97ec300-56b8-49b1-9a17-43b06bcae6f1",

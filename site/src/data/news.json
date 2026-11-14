@@ -1,5 +1,23 @@
 [
   {
+    "id": 40845,
+    "title": "Starship flight 15 powers to orbit—setting up a possible catch on Saturday",
+    "url": "https://arstechnica.com/space/2026/11/starship-flight-15-powers-to-orbit-setting-up-a-possible-catch-on-saturday/",
+    "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-2305018954.jpg",
+    "source": "Arstechnica",
+    "summary": "One way or another, the company will get some more data on Saturday.",
+    "publishedAt": "2026-11-14T00:49:13Z"
+  },
+  {
+    "id": 40844,
+    "title": "Starship IFT-15 is in Orbit — Will it be “Caught” When It Returns to Earth?",
+    "url": "https://spacepolicyonline.com/news/starship-ift-15-is-in-orbit-will-it-be-caught-when-it-returns-to-earth/",
+    "image": "https://spacepolicyonline.com/wp-content/uploads/2026/11/IFT-15-before-launch-3-278x300.jpg",
+    "source": "SpacePolicyOnline.com",
+    "summary": "SpaceX launched the 15th Starship Integrated Flight Test (IFT-15) early this evening from Starbase, Texas. Plans to bring the first stage Booster back to the launch tower for a “catch” […]",
+    "publishedAt": "2026-11-13T23:54:54Z"
+  },
+  {
     "id": 40843,
     "title": "Live Coverage: Starship Flight 15 attempts to recover full vehicle in double launch pad catch",
     "url": "https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/",
@@ -250,23 +268,5 @@
     "source": "NASASpaceflight",
     "summary": "As SpaceX prepares to launch Starship Flight 14 in the coming weeks, work in Florida…",
     "publishedAt": "2026-09-01T18:15:54Z"
-  },
-  {
-    "id": 39713,
-    "title": "Rocket Report: Europe splashes some cash on launch startups; Pallas-1 nears debut",
-    "url": "https://arstechnica.com/space/2026/08/rocket-report-europe-splashes-some-cash-on-launch-startups-pallas-1-nears-debut/",
-    "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/European_Launcher_Challenge_launch_service_providers_initial_capacity_pillars.png",
-    "source": "Arstechnica",
-    "summary": "\"From here on, Starlink missions out of Florida will fly on Starship.\"",
-    "publishedAt": "2026-08-28T11:00:39Z"
-  },
-  {
-    "id": 39679,
-    "title": "SpaceX Introduces New Louisiana Starbase",
-    "url": "https://spacepolicyonline.com/news/spacex-introduces-new-louisiana-starbase/",
-    "image": "https://pbs.twimg.com/profile_images/548027983/Website_logo_400x400.jpg",
-    "source": "SpacePolicyOnline.com",
-    "summary": "SpaceX announced plans today to build a second Starbase, this one on the coast of Louisiana. All Starship launches to date have been from Starbase, TX. They will soon begin […]",
-    "publishedAt": "2026-08-25T22:22:00Z"
   }
 ]

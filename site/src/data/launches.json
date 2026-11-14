@@ -573,7 +573,7 @@
     "missionType": "Communications",
     "orbit": "Low Earth Orbit",
     "failReason": null,
-    "webcastLive": true
+    "webcastLive": false
   },
   {
     "id": "b97ec300-56b8-49b1-9a17-43b06bcae6f1",

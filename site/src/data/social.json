@@ -1,5 +1,33 @@
 [
   {
+    "id": "at://did:plc:yifpqamzwvp3g4szr44mz37r/app.bsky.feed.post/3n2mm4lmxxc2s",
+    "platform": "bluesky",
+    "author": "NASASpaceflight.com",
+    "handle": "nasaspaceflight.com",
+    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:yifpqamzwvp3g4szr44mz37r/bafkreic7pwkmzswncacrgd7sp2zpyfdzijbvn5ai4sznhcj6b6wi7vjx54",
+    "text": "Nearly 50 years after its launch in September 1977, Voyager 1 reached a distance of one light-day from Earth, the distance light can travel in 24 hours.\n\nJoe Kangas reviews:\n\nwww.nasaspaceflight.com/2026/11/voya...",
+    "url": "https://bsky.app/profile/nasaspaceflight.com/post/3n2mm4lmxxc2s",
+    "image": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:yifpqamzwvp3g4szr44mz37r/bafkreiboncg3fceidgbgtupwuvpwuuisghvymhohntpmr5gduxecebp67e",
+    "publishedAt": "2026-11-18T22:27:46.251Z",
+    "likes": 30,
+    "reposts": 3,
+    "starship": false
+  },
+  {
+    "id": "at://did:plc:7rwabpmvyln22hq5vbsuq2ks/app.bsky.feed.post/3n2mkro5fgo2z",
+    "platform": "bluesky",
+    "author": "Space.com",
+    "handle": "space.com",
+    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:7rwabpmvyln22hq5vbsuq2ks/bafkreibbrpiowjkruo7nzpvvrourod264ryytnaobknqb4mpvqk4qacafa",
+    "text": "Astronomers witness a star eating its companion in 1st-of-its-kind observation www.space.com/astronomy/st...",
+    "url": "https://bsky.app/profile/space.com/post/3n2mkro5fgo2z",
+    "image": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7rwabpmvyln22hq5vbsuq2ks/bafkreihte52hwl35sfday3vrnzsy5zd3j4qh4khdjkm7x2hipowmtyex44",
+    "publishedAt": "2026-11-18T22:03:45.050Z",
+    "likes": 4,
+    "reposts": 3,
+    "starship": false
+  },
+  {
     "id": "at://did:plc:7rwabpmvyln22hq5vbsuq2ks/app.bsky.feed.post/3n2me32w7sm2l",
     "platform": "bluesky",
     "author": "Space.com",
@@ -9,7 +37,7 @@
     "url": "https://bsky.app/profile/space.com/post/3n2me32w7sm2l",
     "image": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7rwabpmvyln22hq5vbsuq2ks/bafkreigxprp3kozpgncbpgxmccusruvg7ji6ntiuu55tvwpe3wwhx3gztu",
     "publishedAt": "2026-11-18T20:03:44.350Z",
-    "likes": 2,
+    "likes": 6,
     "reposts": 1,
     "starship": false
   },
@@ -23,7 +51,7 @@
     "url": "https://bsky.app/profile/space.com/post/3n2m5e72ygt2l",
     "image": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7rwabpmvyln22hq5vbsuq2ks/bafkreibzk4dhuuspgqvoxgrpste5cvp7a4qfbznh7vdzmidjpgxmksc3zy",
     "publishedAt": "2026-11-18T18:03:34.352Z",
-    "likes": 4,
+    "likes": 6,
     "reposts": 1,
     "starship": false
   },
@@ -37,7 +65,7 @@
     "url": "https://bsky.app/profile/space.com/post/3n2m23be6dz2z",
     "image": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7rwabpmvyln22hq5vbsuq2ks/bafkreid7uelmwztao2lbxabndqjrp4snexkml3ubceptiag5grt2wnujny",
     "publishedAt": "2026-11-18T17:04:53.747Z",
-    "likes": 4,
+    "likes": 6,
     "reposts": 0,
     "starship": false
   },
@@ -51,7 +79,7 @@
     "url": "https://bsky.app/profile/space.com/post/3n2ly5yqg4c2m",
     "image": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7rwabpmvyln22hq5vbsuq2ks/bafkreifdgrvoomporau6g4oakg5bxecehanzzx6j5odbfvbll4poz4ftku",
     "publishedAt": "2026-11-18T16:30:37.441Z",
-    "likes": 6,
+    "likes": 7,
     "reposts": 1,
     "starship": false
   },
@@ -65,8 +93,8 @@
     "url": "https://bsky.app/profile/space.com/post/3n2ltg7hvwm2t",
     "image": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7rwabpmvyln22hq5vbsuq2ks/bafkreiakfyqjvjitb4mp4acutgigjr3tuko5muzdxy2dthincvtlyclyke",
     "publishedAt": "2026-11-18T15:05:44.840Z",
-    "likes": 3,
-    "reposts": 0,
+    "likes": 4,
+    "reposts": 1,
     "starship": false
   },
   {
@@ -79,8 +107,8 @@
     "url": "https://bsky.app/profile/esa.int/post/3n2lsmrxc3k2e",
     "image": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:yqfmy2p54vqgekrcz5zzykhl/bafkreifxxyyipipwrokvxmitlcnl5slivpavbhkdzfqwn4elp7kcqj5eke",
     "publishedAt": "2026-11-18T14:51:40.844Z",
-    "likes": 304,
-    "reposts": 68,
+    "likes": 345,
+    "reposts": 74,
     "starship": false
   },
   {
@@ -93,7 +121,7 @@
     "url": "https://bsky.app/profile/space.com/post/3n2lqamohsb2m",
     "image": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7rwabpmvyln22hq5vbsuq2ks/bafkreihfy26ent6d5bcdp3va5isdeo3ipkuh6datb2hewo4wv2pjtyt7we",
     "publishedAt": "2026-11-18T14:08:55.942Z",
-    "likes": 4,
+    "likes": 5,
     "reposts": 0,
     "starship": false
   },
@@ -112,20 +140,6 @@
     "starship": false
   },
   {
-    "id": "at://did:plc:7rwabpmvyln22hq5vbsuq2ks/app.bsky.feed.post/3n2lhuf42dk26",
-    "platform": "bluesky",
-    "author": "Space.com",
-    "handle": "space.com",
-    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:7rwabpmvyln22hq5vbsuq2ks/bafkreibbrpiowjkruo7nzpvvrourod264ryytnaobknqb4mpvqk4qacafa",
-    "text": "1 light-day from Earth! NASA’s Voyager 1 probe hits huge milestone in interstellar space www.space.com/space-explor...",
-    "url": "https://bsky.app/profile/space.com/post/3n2lhuf42dk26",
-    "image": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7rwabpmvyln22hq5vbsuq2ks/bafkreihbj2t6gall3uiqqrfs7ugufafrftqbxwb3mcmok4vsasgombqpk4",
-    "publishedAt": "2026-11-18T11:38:54.945Z",
-    "likes": 20,
-    "reposts": 6,
-    "starship": false
-  },
-  {
     "id": "at://did:plc:yifpqamzwvp3g4szr44mz37r/app.bsky.feed.post/3n2k6mn72ts2h",
     "platform": "bluesky",
     "author": "NASASpaceflight.com",
@@ -135,7 +149,7 @@
     "url": "https://bsky.app/profile/nasaspaceflight.com/post/3n2k6mn72ts2h",
     "image": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:yifpqamzwvp3g4szr44mz37r/bafkreidbqv7i4u5fshhi6chmtnu2a6gzc7b3r66qt6xxltw4nialiudwgy",
     "publishedAt": "2026-11-17T23:20:58.955Z",
-    "likes": 31,
+    "likes": 33,
     "reposts": 4,
     "starship": false
   },
@@ -149,7 +163,7 @@
     "url": "https://bsky.app/profile/nasaspaceflight.com/post/3n2jocfy6o22s",
     "image": "https://video.bsky.app/watch/did%3Aplc%3Ayifpqamzwvp3g4szr44mz37r/bafkreib4snavbclbznddcy2n6qmcjiwosj26cbpz5nhq5qqkcjnt3dypda/thumbnail.jpg",
     "publishedAt": "2026-11-17T18:28:54.449Z",
-    "likes": 13,
+    "likes": 14,
     "reposts": 0,
     "starship": true
   },
@@ -163,7 +177,7 @@
     "url": "https://bsky.app/profile/scottmanley.bsky.social/post/3n2jkw6qhc22q",
     "image": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:uwe7uhjncj4ducqvn5xmma7b/bafkreidt3l54rac6k53mz3di7ohgl4va3n7ngsuakcyt6nqbycbl5pcnuq",
     "publishedAt": "2026-11-17T17:28:19.148Z",
-    "likes": 19,
+    "likes": 20,
     "reposts": 0,
     "starship": false
   },
@@ -263,20 +277,6 @@
     "publishedAt": "2026-11-15T21:08:11.249Z",
     "likes": 36,
     "reposts": 5,
-    "starship": true
-  },
-  {
-    "id": "at://did:plc:yifpqamzwvp3g4szr44mz37r/app.bsky.feed.post/3n2erzvluds24",
-    "platform": "bluesky",
-    "author": "NASASpaceflight.com",
-    "handle": "nasaspaceflight.com",
-    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:yifpqamzwvp3g4szr44mz37r/bafkreic7pwkmzswncacrgd7sp2zpyfdzijbvn5ai4sznhcj6b6wi7vjx54",
-    "text": "69 hours after it was lifted off the ground, Ship 42 is back on its stand, after a 22.5 hour trip to orbit at returning for a historic hug by the chopsticks. next up should be a celebratory parade rolling down Highway 4 as it returns home to the Production Site later today.\nnsf.live/starbase",
-    "url": "https://bsky.app/profile/nasaspaceflight.com/post/3n2erzvluds24",
-    "image": "https://video.bsky.app/watch/did%3Aplc%3Ayifpqamzwvp3g4szr44mz37r/bafkreiciuuya2alep7dsvydm7zmdjqbrmxzvjtcz3a3gxbvni7e54xvbfq/thumbnail.jpg",
-    "publishedAt": "2026-11-15T19:52:21.041Z",
-    "likes": 50,
-    "reposts": 4,
     "starship": true
   },
   {
@@ -431,20 +431,6 @@
     "publishedAt": "2026-11-05T16:16:26.882Z",
     "likes": 357,
     "reposts": 69,
-    "starship": false
-  },
-  {
-    "id": "at://did:plc:cbjn5rfoo4owohtvovqdqoss/app.bsky.feed.post/3mzj7iiamlc2i",
-    "platform": "bluesky",
-    "author": "Spaceflight Now",
-    "handle": "spaceflightnow.com",
-    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:cbjn5rfoo4owohtvovqdqoss/bafkreib5gq4ycdgpitpk3rlno3j3mnqid6qgubnq7z4ghs4sg3ece5ptxi",
-    "text": "NASA’s Neil Gehrels Swift Observatory plummeted back into Earth’s atmosphere Wednesday over Western Indonesia, ending nearly 22 years in orbit for the gamma-ray burst hunter after a failed attempt to rescue it. spaceflightnow.com/2026/11/04/n...",
-    "url": "https://bsky.app/profile/spaceflightnow.com/post/3mzj7iiamlc2i",
-    "image": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:cbjn5rfoo4owohtvovqdqoss/bafkreiebzy4g7tyrge2luln6c3hmavsrj3sn4atttszdfpv2m33wbklpcm",
-    "publishedAt": "2026-11-04T20:38:36.483Z",
-    "likes": 27,
-    "reposts": 8,
     "starship": false
   }
 ]

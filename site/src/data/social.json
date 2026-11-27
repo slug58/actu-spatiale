@@ -1,5 +1,61 @@
 [
   {
+    "id": "at://did:plc:uwe7uhjncj4ducqvn5xmma7b/app.bsky.feed.post/3n3cwss36qk2k",
+    "platform": "bluesky",
+    "author": "scottmanley.bsky.social",
+    "handle": "scottmanley.bsky.social",
+    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:uwe7uhjncj4ducqvn5xmma7b/bafkreid742zu52jbw3vp4bvo5rzwc2caavpas4pgzrz4k5j5olsxj7ijfe",
+    "text": "I recently discovered the National Science Foundation report on the collapse of the Arecibo telescope in 2020, and I was legitimately surprised that they didn't find a design or construction flaw, but identified a barely known physics phenomena to blame.\nwww.youtube.com/watch?v=7eH3...",
+    "url": "https://bsky.app/profile/scottmanley.bsky.social/post/3n3cwss36qk2k",
+    "image": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:uwe7uhjncj4ducqvn5xmma7b/bafkreicpolo25kpbzsq27ngk5kzzbnfj6zynlk2l63t623cit45oxpif4e",
+    "publishedAt": "2026-11-27T19:37:45.645Z",
+    "likes": 28,
+    "reposts": 6,
+    "starship": false
+  },
+  {
+    "id": "at://did:plc:7rwabpmvyln22hq5vbsuq2ks/app.bsky.feed.post/3n3cuwmjbv72n",
+    "platform": "bluesky",
+    "author": "Space.com",
+    "handle": "space.com",
+    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:7rwabpmvyln22hq5vbsuq2ks/bafkreibbrpiowjkruo7nzpvvrourod264ryytnaobknqb4mpvqk4qacafa",
+    "text": "Dropping missiles from orbit? 2 European companies sign agreement to study the idea www.space.com/technology/d...",
+    "url": "https://bsky.app/profile/space.com/post/3n3cuwmjbv72n",
+    "image": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7rwabpmvyln22hq5vbsuq2ks/bafkreidb4fe7egx722ol2dwwzxeenan3zubawckhrbumwegkfykd7pjtne",
+    "publishedAt": "2026-11-27T19:04:03.150Z",
+    "likes": 2,
+    "reposts": 1,
+    "starship": false
+  },
+  {
+    "id": "at://did:plc:yifpqamzwvp3g4szr44mz37r/app.bsky.feed.post/3n3cj4b3uac2p",
+    "platform": "bluesky",
+    "author": "NASASpaceflight.com",
+    "handle": "nasaspaceflight.com",
+    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:yifpqamzwvp3g4szr44mz37r/bafkreic7pwkmzswncacrgd7sp2zpyfdzijbvn5ai4sznhcj6b6wi7vjx54",
+    "text": "Stoke Space's Nova Pathfinder vehicle arrives at the Cape ahead of pad and Static Fire testing.\n\nOverview from Eleanor Day \nwww.nasaspaceflight.com/2026/11/stok...",
+    "url": "https://bsky.app/profile/nasaspaceflight.com/post/3n3cj4b3uac2p",
+    "image": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:yifpqamzwvp3g4szr44mz37r/bafkreigxy5aeicsu5guxrt3pfac5idara34bw5lhh4vaetlv2qv2t5wccm",
+    "publishedAt": "2026-11-27T15:32:29.440Z",
+    "likes": 22,
+    "reposts": 2,
+    "starship": false
+  },
+  {
+    "id": "at://did:plc:7rwabpmvyln22hq5vbsuq2ks/app.bsky.feed.post/3n3chgv7byj2n",
+    "platform": "bluesky",
+    "author": "Space.com",
+    "handle": "space.com",
+    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:7rwabpmvyln22hq5vbsuq2ks/bafkreibbrpiowjkruo7nzpvvrourod264ryytnaobknqb4mpvqk4qacafa",
+    "text": "Artemis III astronauts meet their spacecraft | Space photo of the day for Nov. 27, 2026 www.space.com/space-explor...",
+    "url": "https://bsky.app/profile/space.com/post/3n3chgv7byj2n",
+    "image": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7rwabpmvyln22hq5vbsuq2ks/bafkreieaymruw3alkk3rrkbzr4oyswkkobygl6rmb32z5xzkow7vktyqym",
+    "publishedAt": "2026-11-27T15:02:36.447Z",
+    "likes": 7,
+    "reposts": 4,
+    "starship": false
+  },
+  {
     "id": "at://did:plc:yqfmy2p54vqgekrcz5zzykhl/app.bsky.feed.post/3n3c563imvs2s",
     "platform": "bluesky",
     "author": "European Space Agency",
@@ -9,8 +65,8 @@
     "url": "https://bsky.app/profile/esa.int/post/3n3c563imvs2s",
     "image": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:yqfmy2p54vqgekrcz5zzykhl/bafkreiauktfssk4u5cwv2shqskvvjyz33i3pxr6b4pf5vqsk4atkh7c25m",
     "publishedAt": "2026-11-27T11:58:51.246Z",
-    "likes": 23,
-    "reposts": 1,
+    "likes": 92,
+    "reposts": 6,
     "starship": false
   },
   {
@@ -23,8 +79,8 @@
     "url": "https://bsky.app/profile/esa.int/post/3n3c2dazxzc2t",
     "image": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:yqfmy2p54vqgekrcz5zzykhl/bafkreid3enlldwcrjrv6czblczexelrggrhvykns7c7kltaijmrzhlnf6a",
     "publishedAt": "2026-11-27T11:08:00.044Z",
-    "likes": 48,
-    "reposts": 6,
+    "likes": 101,
+    "reposts": 9,
     "starship": false
   },
   {
@@ -37,8 +93,8 @@
     "url": "https://bsky.app/profile/space.com/post/3n3c26nbxog2n",
     "image": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7rwabpmvyln22hq5vbsuq2ks/bafkreifqtrmqgtazkacqt6pvglkpupyqkdoozkt22vupxefmcui7j7xrhm",
     "publishedAt": "2026-11-27T11:05:21.046Z",
-    "likes": 5,
-    "reposts": 1,
+    "likes": 7,
+    "reposts": 3,
     "starship": false
   },
   {
@@ -51,8 +107,8 @@
     "url": "https://bsky.app/profile/esa.int/post/3n3bt7uc2ek2d",
     "image": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:yqfmy2p54vqgekrcz5zzykhl/bafkreidnbqcgognu3ryvdesjvvpxayfhte3hzj6mwgbiobdzgz74rzaupm",
     "publishedAt": "2026-11-27T09:00:49.641Z",
-    "likes": 169,
-    "reposts": 43,
+    "likes": 249,
+    "reposts": 62,
     "starship": false
   },
   {
@@ -65,8 +121,8 @@
     "url": "https://bsky.app/profile/nasaspaceflight.com/post/3n3awepjwwc2w",
     "image": "https://video.bsky.app/watch/did%3Aplc%3Ayifpqamzwvp3g4szr44mz37r/bafkreiblpf56jo7jswmgukpjags3brgp2ej3buso7ymxodpfu6xhq23sre/thumbnail.jpg",
     "publishedAt": "2026-11-27T00:24:30.344Z",
-    "likes": 27,
-    "reposts": 1,
+    "likes": 34,
+    "reposts": 2,
     "starship": false
   },
   {
@@ -79,8 +135,8 @@
     "url": "https://bsky.app/profile/nasaspaceflight.com/post/3n3asdp33322o",
     "image": "https://video.bsky.app/watch/did%3Aplc%3Ayifpqamzwvp3g4szr44mz37r/bafkreibvrp6rn7obbdvtcg5n3suw2nqzals7fzybdzl5oqqcu56cpcvsea/thumbnail.jpg",
     "publishedAt": "2026-11-26T23:12:21.552Z",
-    "likes": 21,
-    "reposts": 4,
+    "likes": 24,
+    "reposts": 5,
     "starship": false
   },
   {
@@ -93,7 +149,7 @@
     "url": "https://bsky.app/profile/nasaspaceflight.com/post/3n3abjnkhss27",
     "image": "https://video.bsky.app/watch/did%3Aplc%3Ayifpqamzwvp3g4szr44mz37r/bafkreigvzgcjsuz6nt5i4goimkkitpqt24rfplp7pwb27lvkplyjtymohy/thumbnail.jpg",
     "publishedAt": "2026-11-26T18:11:28.548Z",
-    "likes": 22,
+    "likes": 24,
     "reposts": 2,
     "starship": false
   },
@@ -149,7 +205,7 @@
     "url": "https://bsky.app/profile/esa.int/post/3n3a2c3bcys26",
     "image": null,
     "publishedAt": "2026-11-26T16:01:57.339Z",
-    "likes": 33,
+    "likes": 35,
     "reposts": 6,
     "starship": false
   },
@@ -182,20 +238,6 @@
     "starship": false
   },
   {
-    "id": "at://did:plc:7rwabpmvyln22hq5vbsuq2ks/app.bsky.feed.post/3n37jnywsel2v",
-    "platform": "bluesky",
-    "author": "Space.com",
-    "handle": "space.com",
-    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:7rwabpmvyln22hq5vbsuq2ks/bafkreibbrpiowjkruo7nzpvvrourod264ryytnaobknqb4mpvqk4qacafa",
-    "text": "Space plants with hot sauce: What ISS astronauts will be eating on Thanksgiving (video) www.space.com/space-explor...",
-    "url": "https://bsky.app/profile/space.com/post/3n37jnywsel2v",
-    "image": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7rwabpmvyln22hq5vbsuq2ks/bafkreies4cr3fapoegmciquj2obwsoxpdsbkc6npqyl34uidp3fhahsmgu",
-    "publishedAt": "2026-11-26T11:04:23.448Z",
-    "likes": 7,
-    "reposts": 2,
-    "starship": false
-  },
-  {
     "id": "at://did:plc:yifpqamzwvp3g4szr44mz37r/app.bsky.feed.post/3n37ap5nbi22f",
     "platform": "bluesky",
     "author": "NASASpaceflight.com",
@@ -205,7 +247,7 @@
     "url": "https://bsky.app/profile/nasaspaceflight.com/post/3n37ap5nbi22f",
     "image": "https://video.bsky.app/watch/did%3Aplc%3Ayifpqamzwvp3g4szr44mz37r/bafkreidnd22zhfoqjitulgymgz6n3x7sjca4slrjk5z4lxiloa2dtarg6u/thumbnail.jpg",
     "publishedAt": "2026-11-26T08:23:59.143Z",
-    "likes": 30,
+    "likes": 31,
     "reposts": 2,
     "starship": false
   },
@@ -219,7 +261,7 @@
     "url": "https://bsky.app/profile/nasaspaceflight.com/post/3n36erxjudc2b",
     "image": "https://video.bsky.app/watch/did%3Aplc%3Ayifpqamzwvp3g4szr44mz37r/bafkreibdamq4evs7c2b4pscdam4vgof4pqrbvbfyyuelnyu33l2yfezgx4/thumbnail.jpg",
     "publishedAt": "2026-11-26T00:04:28.241Z",
-    "likes": 26,
+    "likes": 27,
     "reposts": 5,
     "starship": true
   },
@@ -238,20 +280,6 @@
     "starship": false
   },
   {
-    "id": "at://did:plc:7rwabpmvyln22hq5vbsuq2ks/app.bsky.feed.post/3n35tyw6xgu27",
-    "platform": "bluesky",
-    "author": "Space.com",
-    "handle": "space.com",
-    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:7rwabpmvyln22hq5vbsuq2ks/bafkreibbrpiowjkruo7nzpvvrourod264ryytnaobknqb4mpvqk4qacafa",
-    "text": "Green light for Starmind: SpaceX gets approval to deploy 1 million AI satellites www.space.com/space-explor...",
-    "url": "https://bsky.app/profile/space.com/post/3n35tyw6xgu27",
-    "image": null,
-    "publishedAt": "2026-11-25T19:04:07.445Z",
-    "likes": 3,
-    "reposts": 0,
-    "starship": false
-  },
-  {
     "id": "at://did:plc:yqfmy2p54vqgekrcz5zzykhl/app.bsky.feed.post/3n35qlu7ruk2e",
     "platform": "bluesky",
     "author": "European Space Agency",
@@ -261,8 +289,8 @@
     "url": "https://bsky.app/profile/esa.int/post/3n35qlu7ruk2e",
     "image": "https://video.bsky.app/watch/did%3Aplc%3Ayqfmy2p54vqgekrcz5zzykhl/bafkreigwv6l7pnd2rptkrdzknphweg7aqki3bio6ec6txfmxtut42rkynq/thumbnail.jpg",
     "publishedAt": "2026-11-25T18:03:12.944Z",
-    "likes": 750,
-    "reposts": 290,
+    "likes": 761,
+    "reposts": 298,
     "starship": false
   },
   {
@@ -308,20 +336,6 @@
     "starship": false
   },
   {
-    "id": "at://did:plc:yifpqamzwvp3g4szr44mz37r/app.bsky.feed.post/3n33x7pg6y22u",
-    "platform": "bluesky",
-    "author": "NASASpaceflight.com",
-    "handle": "nasaspaceflight.com",
-    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:yifpqamzwvp3g4szr44mz37r/bafkreic7pwkmzswncacrgd7sp2zpyfdzijbvn5ai4sznhcj6b6wi7vjx54",
-    "text": "China has launched their Shenzhou-24 crewed mission Wednesday at 8:18am local time (00:18 UTC) aboard the Long March 2F/G from Site 91 at the Jiuquan Satellite Launch Center, sending three astronauts to the Chinese Space Station.\n\n[Video Credit 🎥:  CCTV]",
-    "url": "https://bsky.app/profile/nasaspaceflight.com/post/3n33x7pg6y22u",
-    "image": "https://video.bsky.app/watch/did%3Aplc%3Ayifpqamzwvp3g4szr44mz37r/bafkreigm5ut4o3p4yjb5naoc2cb2migdf42vxf3mp5yut47wfhl6e5du4i/thumbnail.jpg",
-    "publishedAt": "2026-11-25T00:56:19.844Z",
-    "likes": 35,
-    "reposts": 5,
-    "starship": false
-  },
-  {
     "id": "at://did:plc:yqfmy2p54vqgekrcz5zzykhl/app.bsky.feed.post/3n32vzlxirk2y",
     "platform": "bluesky",
     "author": "European Space Agency",
@@ -331,8 +345,8 @@
     "url": "https://bsky.app/profile/esa.int/post/3n32vzlxirk2y",
     "image": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:yqfmy2p54vqgekrcz5zzykhl/bafkreiaabggf6gs3sy4n3wecyfusjp6qqbj3l7nx6pukycc4ni7n3jr2p4",
     "publishedAt": "2026-11-24T15:02:24.053Z",
-    "likes": 108,
-    "reposts": 12,
+    "likes": 109,
+    "reposts": 13,
     "starship": false
   },
   {
@@ -376,19 +390,5 @@
     "likes": 97,
     "reposts": 15,
     "starship": false
-  },
-  {
-    "id": "at://did:plc:uwe7uhjncj4ducqvn5xmma7b/app.bsky.feed.post/3n2a2nwoq6c2r",
-    "platform": "bluesky",
-    "author": "scottmanley.bsky.social",
-    "handle": "scottmanley.bsky.social",
-    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:uwe7uhjncj4ducqvn5xmma7b/bafkreid742zu52jbw3vp4bvo5rzwc2caavpas4pgzrz4k5j5olsxj7ijfe",
-    "text": "Despite the ATC chaos, Starship flight 15 is still on schedule.",
-    "url": "https://bsky.app/profile/scottmanley.bsky.social/post/3n2a2nwoq6c2r",
-    "image": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:uwe7uhjncj4ducqvn5xmma7b/bafkreifardcewbjvy3wavhw5y3p7cynoofepkue2xpwyeqmqtsklnq3vle",
-    "publishedAt": "2026-11-13T22:43:27.286Z",
-    "likes": 21,
-    "reposts": 1,
-    "starship": true
   }
 ]
